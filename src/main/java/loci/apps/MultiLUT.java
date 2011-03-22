@@ -88,8 +88,8 @@ import visad.util.VisADSlider;
  * An application for weighted spectral mapping.
  *
  * <dl><dt><b>Source code:</b></dt>
- * <dd><a href="http://dev.loci.wisc.edu/trac/java/browser/trunk/legacy/multi-lut/src/main/java/loci/apps/MultiLUT.java">Trac</a>,
- * <a href="http://dev.loci.wisc.edu/svn/java/trunk/legacy/multi-lut/src/main/java/loci/apps/MultiLUT.java">SVN</a></dd></dl>
+ * <dd><a href="http://dev.loci.wisc.edu/trac/software/browser/trunk/legacy/multi-lut/src/main/java/loci/apps/MultiLUT.java">Trac</a>,
+ * <a href="http://dev.loci.wisc.edu/svn/software/trunk/legacy/multi-lut/src/main/java/loci/apps/MultiLUT.java">SVN</a></dd></dl>
  *
  * @author Curtis Rueden ctrueden at wisc.edu
  */
