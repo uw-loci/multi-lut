@@ -6,18 +6,24 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>loci</groupId>
-		<artifactId>pom-loci</artifactId>
-		<version>2.0.0</version>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>14.0.0</version>
 		<relativePath />
 	</parent>
 
+	<groupId>loci</groupId>
 	<artifactId>MultiLUT</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
 	<name>Multi-LUT</name>
 	<description>A demo application for visually exploring multi-spectral image data.</description>
+	<url>https://github.com/uw-loci/multi-lut</url>
 	<inceptionYear>2001</inceptionYear>
+	<organization>
+		<name>LOCI</name>
+		<url>https://loci.wisc.edu/</url>
+	</organization>
 	<licenses>
 		<license>
 			<name>Simplified BSD License</name>
@@ -43,12 +49,39 @@
 		</contributor>
 	</contributors>
 
+	<mailingLists>
+		<mailingList>
+			<name>LOCI Software</name>
+			<subscribe>https://loci.wisc.edu/mailman/listinfo/loci-software</subscribe>
+			<unsubscribe>https://loci.wisc.edu/mailman/listinfo/loci-software</unsubscribe>
+			<post>loci-software@loci.wisc.edu</post>
+			<archive>https://loci.wisc.edu/pipermail/loci-software/</archive>
+		</mailingList>
+	</mailingLists>
+
 	<scm>
 		<connection>scm:git:git://github.com/uw-loci/multi-lut</connection>
 		<developerConnection>scm:git:git@github.com:uw-loci/multi-lut</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/uw-loci/multi-lut</url>
 	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/uw-loci/multi-lut/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/uw-loci/multi-lut</url>
+	</ciManagement>
+
+	<properties>
+		<main-class>loci.apps.MultiLUT</main-class>
+		<package-name>loci.apps</package-name>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>Board of Regents of the University of
+Wisconsin-Madison.</license.copyrightOwners>
+		<license.projectName>MultiLUT demo application for visually exploring multi-spectral image data.</license.projectName>
+	</properties>
 
 	<repositories>
 		<repository>
@@ -64,27 +97,4 @@
 			<version>2.0.20070828</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>loci.apps.MultiLUT</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<configuration>
-					<licenseName>bsd_2</licenseName>
-					<projectName>MultiLUT demo application for visually exploring multi-spectral image data.</projectName>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
